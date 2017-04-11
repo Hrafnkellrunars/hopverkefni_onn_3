@@ -23,7 +23,7 @@ namespace Hópaverkefni_önn_3_Hrafnkell
 
         public void TengingVidGagnagrunn()
         {
-            server = "10.200.10.24"; // ip tala serversins
+            server = "82.148.66.15"; // ip tala serversins
             database = "0701882449_hrutaspil"; // nafn databeisisins
             uid = "0701882449"; // kennitala
             password = "mypassword"; // lykilorð
