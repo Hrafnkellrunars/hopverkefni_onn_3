@@ -30,75 +30,32 @@ namespace Hópaverkefni_önn_3_Hrafnkell
                 MessageBox.Show(ex.ToString());
             }
         }
-        public void Hledsla() // void til að endurhlaða gagnagrunninn sjálfkrafa
+
+        private void btStart_Click_1(object sender, EventArgs e)
         {
-            listView1.Clear(); // hreinsar listviewið
-
-            listView1.Columns.Add("ID", 70); // sýnir nafn stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("Nafn", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("Sort", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("Þyngd", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("Mjólk", 70); // sýnir nafn stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("ull", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("afkvæmi", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("einkunlæris", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("frjósemi", 70); // sýnir nafn stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("gerð", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-            listView1.Columns.Add("einkunmalir", 70); // sýnir stokk stökkvarans og plássið sem sá reitur fær
-
-            List<string> linur = new List<string>();
-
-            string[] arr = new string[11];
-
-            ListViewItem itm;
-
-            try
-            {
-                linur = gagnagrunnur.LesautSQLToflu();
-
-                foreach (string lin in linur)
-                {
-                    string[] linaUrLista = lin.Split(':');
-                    string id = linaUrLista[0];
-                    string nafn = linaUrLista[1];
-                    string stokk = linaUrLista[2];
-                    string thyngd = linaUrLista[3];
-                    string mjolk = linaUrLista[4];
-                    string ull = linaUrLista[5];
-                    string afkvaemi = linaUrLista[6];
-                    string einkunlaeris = linaUrLista[7];
-                    string frjosemi = linaUrLista[8];
-                    string gerd = linaUrLista[9];
-                    string einkunmalir = linaUrLista[10];
-
-                    arr[0] = id; // array fyrir nafn
-                    arr[1] = nafn; // array fyrir stök
-                    arr[2] = stokk; //
-                    arr[3] = thyngd; //
-                    arr[4] = mjolk; //
-                    arr[5] = ull; //
-                    arr[6] = afkvaemi; //
-                    arr[7] = einkunlaeris; //
-                    arr[8] = frjosemi; //
-                    arr[9] = gerd; //
-                    arr[10] = einkunmalir; //
-                    
-
-
-                    itm = new ListViewItem(arr);
-                    listView1.Items.Add(itm);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-
+            panelSpilari.BackgroundImage = spil.Images[1];
+            panelAI.BackgroundImage = spil.Images[0];
+            btStart.Visible = false;
+            button1.Visible = true;
+            button2.Visible = true;
+            button3.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button6.Visible = true;
+            button7.Visible = true;
+            button8.Visible = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Hledsla(); // endurhleður sig
+            button1.Visible = false;
+            button2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            button6.Visible = false;
+            button7.Visible = false;
+            button8.Visible = false;
         }
     }
 }
