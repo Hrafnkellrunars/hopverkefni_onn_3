@@ -37,14 +37,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btthyngd = new System.Windows.Forms.Button();
+            this.btmjolk = new System.Windows.Forms.Button();
+            this.btull = new System.Windows.Forms.Button();
+            this.btafkvaemi = new System.Windows.Forms.Button();
+            this.btlaeri = new System.Windows.Forms.Button();
+            this.btfrjosemi = new System.Windows.Forms.Button();
+            this.btgerd = new System.Windows.Forms.Button();
+            this.btmalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panelSpilari
@@ -159,91 +159,92 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "AI";
             // 
-            // button1
+            // btthyngd
             // 
-            this.button1.Location = new System.Drawing.Point(283, 199);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 53);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Þyngd";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btthyngd.Location = new System.Drawing.Point(283, 199);
+            this.btthyngd.Name = "btthyngd";
+            this.btthyngd.Size = new System.Drawing.Size(59, 53);
+            this.btthyngd.TabIndex = 0;
+            this.btthyngd.Text = "Þyngd";
+            this.btthyngd.UseVisualStyleBackColor = true;
+            this.btthyngd.Click += new System.EventHandler(this.btthyngd_Click);
             // 
-            // button2
+            // btmjolk
             // 
-            this.button2.Location = new System.Drawing.Point(348, 199);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 53);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Mjólk";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btmjolk.Location = new System.Drawing.Point(348, 199);
+            this.btmjolk.Name = "btmjolk";
+            this.btmjolk.Size = new System.Drawing.Size(59, 53);
+            this.btmjolk.TabIndex = 6;
+            this.btmjolk.Text = "Mjólk";
+            this.btmjolk.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btull
             // 
-            this.button3.Location = new System.Drawing.Point(413, 199);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(59, 53);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Ull";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btull.Location = new System.Drawing.Point(413, 199);
+            this.btull.Name = "btull";
+            this.btull.Size = new System.Drawing.Size(59, 53);
+            this.btull.TabIndex = 7;
+            this.btull.Text = "Ull";
+            this.btull.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btafkvaemi
             // 
-            this.button4.Location = new System.Drawing.Point(478, 199);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(59, 53);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Afkvæmi";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btafkvaemi.Location = new System.Drawing.Point(478, 199);
+            this.btafkvaemi.Name = "btafkvaemi";
+            this.btafkvaemi.Size = new System.Drawing.Size(59, 53);
+            this.btafkvaemi.TabIndex = 8;
+            this.btafkvaemi.Text = "Afkvæmi";
+            this.btafkvaemi.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btlaeri
             // 
-            this.button5.Location = new System.Drawing.Point(283, 258);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(59, 53);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Læri";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btlaeri.Location = new System.Drawing.Point(283, 258);
+            this.btlaeri.Name = "btlaeri";
+            this.btlaeri.Size = new System.Drawing.Size(59, 53);
+            this.btlaeri.TabIndex = 9;
+            this.btlaeri.Text = "Læri";
+            this.btlaeri.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btfrjosemi
             // 
-            this.button6.Location = new System.Drawing.Point(348, 258);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(59, 53);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Frjósemi";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btfrjosemi.Location = new System.Drawing.Point(348, 258);
+            this.btfrjosemi.Name = "btfrjosemi";
+            this.btfrjosemi.Size = new System.Drawing.Size(59, 53);
+            this.btfrjosemi.TabIndex = 10;
+            this.btfrjosemi.Text = "Frjósemi";
+            this.btfrjosemi.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btgerd
             // 
-            this.button7.Location = new System.Drawing.Point(413, 258);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(59, 53);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "Gerð";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btgerd.Location = new System.Drawing.Point(413, 258);
+            this.btgerd.Name = "btgerd";
+            this.btgerd.Size = new System.Drawing.Size(59, 53);
+            this.btgerd.TabIndex = 11;
+            this.btgerd.Text = "Gerð";
+            this.btgerd.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btmalir
             // 
-            this.button8.Location = new System.Drawing.Point(478, 258);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(59, 53);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "Malir";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btmalir.Location = new System.Drawing.Point(478, 258);
+            this.btmalir.Name = "btmalir";
+            this.btmalir.Size = new System.Drawing.Size(59, 53);
+            this.btmalir.TabIndex = 12;
+            this.btmalir.Text = "Malir";
+            this.btmalir.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 433);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btmalir);
+            this.Controls.Add(this.btgerd);
+            this.Controls.Add(this.btfrjosemi);
+            this.Controls.Add(this.btlaeri);
+            this.Controls.Add(this.btafkvaemi);
+            this.Controls.Add(this.btull);
+            this.Controls.Add(this.btmjolk);
+            this.Controls.Add(this.btthyngd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -267,14 +268,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btthyngd;
+        private System.Windows.Forms.Button btmjolk;
+        private System.Windows.Forms.Button btull;
+        private System.Windows.Forms.Button btafkvaemi;
+        private System.Windows.Forms.Button btlaeri;
+        private System.Windows.Forms.Button btfrjosemi;
+        private System.Windows.Forms.Button btgerd;
+        private System.Windows.Forms.Button btmalir;
 
     }
 }

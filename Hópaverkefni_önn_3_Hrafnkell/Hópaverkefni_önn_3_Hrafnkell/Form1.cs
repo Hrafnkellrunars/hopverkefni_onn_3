@@ -30,32 +30,83 @@ namespace Hópaverkefni_önn_3_Hrafnkell
                 MessageBox.Show(ex.ToString());
             }
         }
+        Random random = new Random();
+        List<int> Spilari = new List<int>();
+        List<int> AI = new List<int>();
+        List<int> Geyma = new List<int>();
 
         private void btStart_Click_1(object sender, EventArgs e)
         {
-            panelSpilari.BackgroundImage = spil.Images[1];
-            panelAI.BackgroundImage = spil.Images[0];
+            int temp = 0;
+
+            for (int i = 0; i < 2; i++)
+            {
+                temp = random.Next(0, 52);
+                if (!Spilari.Contains(temp))
+                {
+                    Spilari.Add(temp);
+                }
+
+                else
+                {
+                    i--;
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                temp = random.Next(0, 52);
+                if (!Spilari.Contains(temp) && !AI.Contains(temp))
+                {
+                    AI.Add(temp);
+                }
+
+                else
+                {
+                    i--;
+                }
+            }
+            panelSpilari.BackgroundImage = spil.Images[Spilari[0]];
             btStart.Visible = false;
-            button1.Visible = true;
-            button2.Visible = true;
-            button3.Visible = true;
-            button4.Visible = true;
-            button5.Visible = true;
-            button6.Visible = true;
-            button7.Visible = true;
-            button8.Visible = true;
+            
+
+
+            btStart.Visible = false;
+            btthyngd.Visible = true;
+            btmjolk.Visible = true;
+            btull.Visible = true;
+            btafkvaemi.Visible = true;
+            btlaeri.Visible = true;
+            btfrjosemi.Visible = true;
+            btgerd.Visible = true;
+            btmalir.Visible = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            button1.Visible = false;
-            button2.Visible = false;
-            button3.Visible = false;
-            button4.Visible = false;
-            button5.Visible = false;
-            button6.Visible = false;
-            button7.Visible = false;
-            button8.Visible = false;
+            btthyngd.Visible = false;
+            btmjolk.Visible = false;
+            btull.Visible = false;
+            btafkvaemi.Visible = false;
+            btlaeri.Visible = false;
+            btfrjosemi.Visible = false;
+            btgerd.Visible = false;
+            btmalir.Visible = false;
+        }
+
+        private void btthyngd_Click(object sender, EventArgs e)
+        {
+            btthyngd.Visible = false;
+            btmjolk.Visible = false;
+            btull.Visible = false;
+            btafkvaemi.Visible = false;
+            btlaeri.Visible = false;
+            btfrjosemi.Visible = false;
+            btgerd.Visible = false;
+            btmalir.Visible = false;
+
+            panelAI.BackgroundImage = spil.Images[AI[0]];
+
         }
     }
 }
