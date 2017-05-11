@@ -30,18 +30,18 @@ namespace Hópaverkefni_önn_3_Hrafnkell
                 MessageBox.Show(ex.ToString());
             }
         }
-        Random random = new Random();
+        Random random = new Random(); // býr til randomizer
         List<int> Spilari = new List<int>();
         List<int> AI = new List<int>();
         List<int> Geyma = new List<int>();
 
-        private void btStart_Click_1(object sender, EventArgs e)
+        private void btStart_Click_1(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
         {
             int temp = 0;
 
             for (int i = 0; i < 2; i++)
             {
-                temp = random.Next(0, 52);
+                temp = random.Next(0, 52); // velur random tölu frá 0-52
                 if (!Spilari.Contains(temp))
                 {
                     Spilari.Add(temp);
@@ -55,7 +55,7 @@ namespace Hópaverkefni_önn_3_Hrafnkell
 
             for (int i = 0; i < 2; i++)
             {
-                temp = random.Next(0, 52);
+                temp = random.Next(0, 52); // velur random tölu frá 0-52
                 if (!Spilari.Contains(temp) && !AI.Contains(temp))
                 {
                     AI.Add(temp);
@@ -66,47 +66,131 @@ namespace Hópaverkefni_önn_3_Hrafnkell
                     i--;
                 }
             }
-            panelSpilari.BackgroundImage = spil.Images[Spilari[0]];
-            btStart.Visible = false;
+            panelSpilari.BackgroundImage = spil.Images[Spilari[0]]; // birtir random mynd á panelinn hjá spilaranum
+            btStart.Visible = false; // gerir takkann ósýnilegan
             
 
 
-            btStart.Visible = false;
-            btthyngd.Visible = true;
-            btmjolk.Visible = true;
-            btull.Visible = true;
-            btafkvaemi.Visible = true;
-            btlaeri.Visible = true;
-            btfrjosemi.Visible = true;
-            btgerd.Visible = true;
-            btmalir.Visible = true;
+            btStart.Visible = false; // gerir takkann ósýnilegan
+            btthyngd.Visible = true; // gerir takkann ósýnilegan
+            btmjolk.Visible = true; // gerir takkann ósýnilegan
+            btull.Visible = true; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = true; // gerir takkann ósýnilegan
+            btlaeri.Visible = true; // gerir takkann ósýnilegan
+            btfrjosemi.Visible = true; // gerir takkann ósýnilegan
+            btgerd.Visible = true; // gerir takkann ósýnilegan
+            btmalir.Visible = true; // gerir takkann ósýnilegan
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e) // þegar forritið/formið loadast
         {
-            btthyngd.Visible = false;
-            btmjolk.Visible = false;
-            btull.Visible = false;
-            btafkvaemi.Visible = false;
-            btlaeri.Visible = false;
-            btfrjosemi.Visible = false;
-            btgerd.Visible = false;
-            btmalir.Visible = false;
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false; // gerir takkann ósýnilegan
+            btlaeri.Visible = false; // gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
         }
 
-        private void btthyngd_Click(object sender, EventArgs e)
+        private void btthyngd_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
         {
-            btthyngd.Visible = false;
-            btmjolk.Visible = false;
-            btull.Visible = false;
-            btafkvaemi.Visible = false;
-            btlaeri.Visible = false;
-            btfrjosemi.Visible = false;
-            btgerd.Visible = false;
-            btmalir.Visible = false;
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
 
-            panelAI.BackgroundImage = spil.Images[AI[0]];
+            panelAI.BackgroundImage = spil.Images[AI[0]]; // birtir random mynd á panelinn hjá tölvunni
 
+        }
+
+        private void btmjolk_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
+        {
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
+        }
+
+        private void btull_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
+        {
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
+        }
+
+        private void btafkvaemi_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
+        {
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
+        }
+
+        private void btlaeri_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
+        {
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
+        }
+
+        private void btfrjosemi_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
+        {
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
+        }
+
+        private void btgerd_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
+        {
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
+        }
+
+        private void btmalir_Click(object sender, EventArgs e) // þegar ýtt er á takkan á keyrast eftirfarandi skipanir
+        {
+            btthyngd.Visible = false; // gerir takkann ósýnilegan
+            btmjolk.Visible = false; // gerir takkann ósýnilegan
+            btull.Visible = false; // gerir takkann ósýnilegan
+            btafkvaemi.Visible = false;// gerir takkann ósýnilegan
+            btlaeri.Visible = false;// gerir takkann ósýnilegan
+            btfrjosemi.Visible = false; // gerir takkann ósýnilegan
+            btgerd.Visible = false; // gerir takkann ósýnilegan
+            btmalir.Visible = false; // gerir takkann ósýnilegan
         }
     }
 }

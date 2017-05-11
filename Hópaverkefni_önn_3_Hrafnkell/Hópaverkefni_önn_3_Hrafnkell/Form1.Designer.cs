@@ -177,6 +177,7 @@
             this.btmjolk.TabIndex = 6;
             this.btmjolk.Text = "Mjólk";
             this.btmjolk.UseVisualStyleBackColor = true;
+            this.btmjolk.Click += new System.EventHandler(this.btmjolk_Click);
             // 
             // btull
             // 
@@ -186,6 +187,7 @@
             this.btull.TabIndex = 7;
             this.btull.Text = "Ull";
             this.btull.UseVisualStyleBackColor = true;
+            this.btull.Click += new System.EventHandler(this.btull_Click);
             // 
             // btafkvaemi
             // 
@@ -195,6 +197,7 @@
             this.btafkvaemi.TabIndex = 8;
             this.btafkvaemi.Text = "Afkvæmi";
             this.btafkvaemi.UseVisualStyleBackColor = true;
+            this.btafkvaemi.Click += new System.EventHandler(this.btafkvaemi_Click);
             // 
             // btlaeri
             // 
@@ -204,6 +207,7 @@
             this.btlaeri.TabIndex = 9;
             this.btlaeri.Text = "Læri";
             this.btlaeri.UseVisualStyleBackColor = true;
+            this.btlaeri.Click += new System.EventHandler(this.btlaeri_Click);
             // 
             // btfrjosemi
             // 
@@ -213,6 +217,7 @@
             this.btfrjosemi.TabIndex = 10;
             this.btfrjosemi.Text = "Frjósemi";
             this.btfrjosemi.UseVisualStyleBackColor = true;
+            this.btfrjosemi.Click += new System.EventHandler(this.btfrjosemi_Click);
             // 
             // btgerd
             // 
@@ -222,6 +227,7 @@
             this.btgerd.TabIndex = 11;
             this.btgerd.Text = "Gerð";
             this.btgerd.UseVisualStyleBackColor = true;
+            this.btgerd.Click += new System.EventHandler(this.btgerd_Click);
             // 
             // btmalir
             // 
@@ -231,6 +237,7 @@
             this.btmalir.TabIndex = 12;
             this.btmalir.Text = "Malir";
             this.btmalir.UseVisualStyleBackColor = true;
+            this.btmalir.Click += new System.EventHandler(this.btmalir_Click);
             // 
             // Form1
             // 

@@ -14,6 +14,7 @@ namespace Hópaverkefni_önn_3_Hrafnkell
         private string uid; // MySQL Notendanafnið
         private string password; // MySQLlykilorðið
 
+        string spil = null;
         string tengistrengur = null; // tengir saman strenginn og databeisið
         string fyrirspurn = null; // inniheldur fyrirspurn
 
